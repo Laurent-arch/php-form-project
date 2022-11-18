@@ -11,23 +11,23 @@
 
 <body>
     <div class="container">
-    <form action="process-form.php" method="POST">
+    <form action="process-form.php" method="POST" name="RegForm" onsubmit="return validateForm()">
         <h1 class="mt-5">Registration form</h1>
   <div class="form-group">
     <label for="firstname">First name</label>
-    <input type="text" class="form-control my-2" id="firstname" placeholder="First name" name="firstname">
+    <input type="text" class="form-control my-2" id="firstname" placeholder="First name" name="firstname" required>
   </div>
   <div class="form-group">
     <label for="lastname">Last name</label>
-    <input type="text" class="form-control my-2" id="lastname" placeholder="Last name" name="lastname">
+    <input type="text" class="form-control my-2" id="lastname" placeholder="Last name" name="lastname" required>
   </div>
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" class="form-control my-2" id="email" placeholder="Email" name="email">
+    <input type="email" class="form-control my-2" id="email" placeholder="Email" name="email" required>
   </div>
   <div class="form-group">
     <label for="mobile">Mobile</label>
-    <input type="text" class="form-control my-2" id="mobile" placeholder="Mobile number" name="mobile">
+    <input type="text" class="form-control my-2" id="mobile" placeholder="Mobile number" name="mobile" required>
   </div>
   <div class="col-auto my-1">
       <label class="mr-sm-2 sr-only" for="">Category</label>
@@ -41,6 +41,7 @@
   <button type="submit" class="btn btn-primary my-2">Submit</button>
 </form>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
 
